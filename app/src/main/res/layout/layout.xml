@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvShapeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Circle Area"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <RelativeLayout
+        android:id="@+id/rlCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShapeName"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tvRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radius :"/>
+        <EditText
+            android:id="@+id/etRadius"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvRadius"
+            android:layout_alignBaseline="@+id/tvRadius"/>
+        <Button
+            android:id="@+id/btnCCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRadius"
+            android:layout_marginTop="20dp"
+            android:text="Calculate Circle Area"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlTriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShapeName"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/tvBreadth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breadth :"/>
+        <EditText
+            android:id="@+id/etBreadth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvBreadth"
+            android:layout_alignBaseline="@+id/tvBreadth"/>
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBreadth"
+            android:layout_marginTop="10dp"
+            android:text="Height :"/>
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvHeight"
+            android:layout_alignBaseline="@+id/tvHeight"/>
+        <Button
+            android:id="@+id/btnTCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHeight"
+            android:layout_marginTop="20dp"
+            android:text="Calculate Traingle Area"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlEllipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvShapeName"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/tvMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi-Major :"/>
+        <EditText
+            android:id="@+id/etMajor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvMajor"
+            android:layout_alignBaseline="@+id/tvMajor"/>
+        <TextView
+            android:id="@+id/tvMinor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMajor"
+            android:layout_marginTop="10dp"
+            android:text="Semi-Minor :"/>
+        <EditText
+            android:id="@+id/etMinor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvMinor"
+            android:layout_alignBaseline="@+id/tvMinor"/>
+        <Button
+            android:id="@+id/btnECalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMinor"
+            android:layout_marginTop="20dp"
+            android:text="Calculate Ellipse Area"/>
+    </RelativeLayout>
+</RelativeLayout>

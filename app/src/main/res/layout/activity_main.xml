@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cs_project.MainActivity">
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    <RadioGroup
+        android:id="@+id/rgShapes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvArea"
+        android:layout_below="@+id/tvArea">
+
+        <RadioButton
+            android:id="@+id/rbTriangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Triangle" />
+
+        <RadioButton
+            android:id="@+id/rbCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle" />
+
+        <RadioButton
+            android:id="@+id/rbEllipse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ellipse" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgShapes"
+        android:layout_alignLeft="@+id/tvArea"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculation"/>
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCalculate"
+        android:layout_alignLeft="@+id/tvArea"
+        android:layout_marginTop="30dp"
+        android:hint="@string/answer_hint"/>
+
+</RelativeLayout>
